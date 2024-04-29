@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NotesApp</title>
+    <link rel="stylesheet" href="/src/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <app-bar></app-bar>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="input-section">
+          <h2>Catatan Baru</h2>
+          <form id="notesForm" class="notes-form">
+            <div class="form-group">
+              <label for="noteTitle">Judul</label>
+              <input type="text" name="noteTitle" id="noteTitle" required />
+            </div>
+            <div class="form-group">
+              <label for="noteDesc">Deskripsi</label>
+              <textarea
+                name="noteDesc"
+                id="noteDesc"
+                cols="20"
+                rows="8"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" id="saveBtn">Simpan</button>
+          </form>
+        </section>
+        <section id="note" class="note">
+          <div class="title-section">
+            <h2>Notes List</h2>
+          </div>
+          <div id="noteListContainer" class="note-list-container">
+            <note-list></note-list>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <footer-bar></footer-bar>
+      <!-- <div class="container">
+        <div class="app-brand-footer">NotesApp</div>
+        <div class="main-footer">Copyright &copy; <span id="currentYear"></span>. by Muh. Salim Maulana. All rights reserved.</div>
+      </div> -->
+    </footer>
+
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 60px;
+}
+
+section.input-section {
+  margin: 12px 320px 120px 320px;
+}
+
+section.input-section h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #003c43;
+  margin-bottom: 20px;
+}
+
+div.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+div.form-group input,
+textarea {
+  border: 1px solid #135D66;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+div.form-group>label {
+  margin-bottom: 8px;
+  color: #135D66;
+}
+
+button#saveBtn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 16px;
+  background-color: #77b0aa;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button#saveBtn:hover {
+  background-color: #659994;
+  transition: 0.3 ease-in;
+}
+
+section.note {
+  align-self: self-start;
+  margin: 40px;
+}
+
+section.note .title-section>h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  color: #003c43;
+}
+
+footer {
+  background-color: #003c43;
+}
